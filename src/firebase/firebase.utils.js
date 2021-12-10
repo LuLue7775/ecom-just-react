@@ -18,8 +18,32 @@ const firebaseConfig = {
   measurementId: "${config.measurementId}"
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+export const createUserProfileDocument = async (userAuth, additionalData) => {
+  if (!userAuth) return;
+
+  const userRef = firestore.doc(`users/${userAuth.uid}`); // .doc returns a ref object
+
+  const snapShot = await userRef.get(); // you can implement CRUD to that object. firestore returns a snapshot based on that ref.
+
+  if (!snapShot.exists) { // if that docRef not exist in database, create it. but if calling actual properties is needed, use snapShot.data()
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+    try {
+      await userRef.set({
+        displayName,
+        email,
+        createdAt,
+        ...additionalData
+      });
+    } catch (error) {
+      console.log('error creating user', error.message);
+    }
+  }
+
+  return userRef;
+};
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
