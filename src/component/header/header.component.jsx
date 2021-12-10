@@ -6,7 +6,10 @@ import { auth } from "../../firebase/firebase.utils";
 
 import { connect } from "react-redux";
 
-const Header = ({currentUser}) => (
+import CartIcon from "../cart-icon/cart-icon.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
+
+const Header = ({currentUser, hidden}) => (
     <div className='header'>
         <Link to="/" className='logo-container'> 
             <Logo className='logo' />
@@ -20,12 +23,18 @@ const Header = ({currentUser}) => (
                 :
                 <Link to="/signin" className='option'> SIGNIN </Link>
             }
-            
+            <CartIcon/>
         </div>
+
+        {
+            hidden ? null : <CartDropdown />
+        }
     </div>
 );
 
-const mpaStateToProps = state => ({
-    currentUser: state.user.currentUser
-})
+const mpaStateToProps = ({ user:{ currentUser }, cart:{ hidden } }) => ({
+    currentUser,
+    hidden
+});
+
 export default connect(mpaStateToProps)(Header);
