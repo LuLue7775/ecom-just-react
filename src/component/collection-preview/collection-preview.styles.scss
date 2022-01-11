@@ -1,0 +1,38 @@
+.collection-preview {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin-bottom: 30px;
+
+    .title {
+      font-family: 'Raleway', sans-serif;
+      // font-style: italic;
+      font-weight: bold;
+      font-size: 32px;
+      margin-bottom: 30px;
+      writing-mode: vertical-rl;
+       text-align: start;
+       
+    }
+    .title-sm {
+      font-family: 'Raleway', sans-serif;
+      font-style: italic;
+      font-size: 20px;
+      margin: 0;
+    }
+    .punchline {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  
+    .preview {
+      display: grid;
+      grid-template-columns: repeat(2, 35vw);
+      justify-content: space-evenly;
+      gap: 1em;
+      
+    }
+  }

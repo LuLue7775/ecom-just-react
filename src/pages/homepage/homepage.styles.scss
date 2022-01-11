@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'BondoniOpti';
+  src: local('BondoniOpti'), url('../../fonts/BodoniOpti/BodoniOpti-SemiCompressed.ttf.woff') format('woff');
+}
+@font-face {
+  font-family: 'SangBleuSans';
+  src: local('SangBleuSans'), url('../../fonts/SangBleuSans/SangBleuSans-Light.otf') format('otf');
+}
+
+.homepage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding: 20px 80px;
+  overflow: hidden;
+  // background-color: #f8d8ec ;
+  background: linear-gradient(0.65turn, #ff6333, #f8d8ec);
+
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // height: 100%;
+
+}
+  
+// .scroll-wrap {
+//   position: absolute;
+//   overflow: hidden;
+// }

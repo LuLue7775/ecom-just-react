@@ -1,0 +1,31 @@
+.first-panel {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image:url('https://i.ibb.co/vvhq2xV/USo-A-Homepage-Block-1-c96a0186-7fea-4753-8d2b-807aa1b676cf.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    .shop-now-btn {
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+        transform: translate(-50%,-50%);
+        z-index: 10;
+    }
+
+    .first-line {
+      font-family: 'BondoniOpti', serif;
+      position: absolute;
+      bottom: -4%;
+      left: 50%;
+      transform: translateX(-50%);
+      
+      font-size: calc(min(20vw,300px));
+      white-space: nowrap;
+      color:#ff4810;
+
+      // text-decoration: underline;
+    }
+}

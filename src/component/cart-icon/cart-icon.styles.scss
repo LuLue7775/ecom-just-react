@@ -1,0 +1,36 @@
+.cart-icon {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:2px solid #f24d2f;
+    border-radius: 70px;
+    
+    .shopping-icon {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .item-count {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+
+      font-size: 30px;
+      font-weight: bold;
+      bottom: 12px;
+
+
+    }
+
+    &:hover {
+      background-color: white;
+    }
+  }

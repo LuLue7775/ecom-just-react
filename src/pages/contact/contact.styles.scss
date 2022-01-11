@@ -1,0 +1,27 @@
+.contact {
+    font-family: 'Raleway', sans-serif;
+    
+    width: 100%;
+    position: relative;
+    background: linear-gradient(0.70turn, #f8d8ec, #ff8737);
+
+    .contact-content{
+        min-height: 100vh;
+        width: 55%;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 150px;
+
+        p {
+            text-align: start;
+        }
+        
+    }
+    .contact-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 10vh;
+    }
+
+  }

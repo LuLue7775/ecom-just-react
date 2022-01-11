@@ -1,0 +1,25 @@
+.sign-up {
+  position: relative;
+  width: 50vw;
+  min-width: 400px;
+  max-width: 500px;
+  
+  display: flex;
+  flex-direction: column;
+ 
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+  padding-top: 50px;
+  padding-bottom: 100px;
+  .title {
+    margin: 10px 0;
+
+  }
+
+  .sign-up-button {
+    position: absolute;
+    right: 0;
+    // transform: translate(-50%, 0);
+  }
+}

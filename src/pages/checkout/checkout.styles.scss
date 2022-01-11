@@ -1,0 +1,59 @@
+.checkout-page {
+  font-family: 'Raleway', sans-serif;
+
+  width: 100%;
+  position: relative;
+  background: linear-gradient(0.70turn, #f8d8ec, #ff8737);
+  padding-bottom: 100px;
+  .checkout-wrap{
+    min-height: 90vh;
+    width: 55%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 150px;
+
+
+    
+    .checkout-header {
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #cddbfd;
+      
+      .header-block {
+        text-transform: capitalize;
+        width: 23%;
+
+        &:last-child {
+          width: 8%;
+        }
+      }
+    }
+
+    span.name {
+      font-family: 'Playfair Display', serif;
+    }
+    .total {
+      font-family: 'Playfair Display', serif;
+      margin-top: 30px;
+      margin-left: auto;
+      font-size: 36px;
+    }
+  
+    button {
+      margin-left: auto;
+      margin-top: 50px;
+    }
+  
+    .test-warning {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 24px;
+      color: red;
+    }
+
+  }
+}

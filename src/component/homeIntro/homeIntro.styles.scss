@@ -1,0 +1,96 @@
+  .second-panel {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    height: 100vh;
+    min-height: 780px;
+    width: 100vw;
+    
+    .graphics {
+      height: 70%;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      justify-items: center;
+      padding: 100px;
+      color: #c6e1ff;
+
+    }
+
+    .graphic-top {
+      display: flex;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: center;
+      border:2px solid #cddbfd;
+      border-radius: 200px;
+      height: 200px;
+      width: 200px;
+    }
+    .graphic-bottom {
+      display: flex;
+      align-self: flex-end;
+      align-items: center;
+      justify-content: center;
+      border:2px solid #c6e1ff;
+      border-radius: 200px;
+      height: 200px;
+      width: 200px;
+    }
+
+    .detial-number {
+      font-size: 60px;
+    }
+
+    .marquee{
+      width:3500px;
+      height:50px;
+      position:relative;
+      margin:auto;
+      background:#c6e1ff;
+      overflow:hidden;
+    }
+    .marquee-line{
+      width:500px;
+      height:50px;
+      position:absolute;
+      font-size:25px;
+      line-height:50px;
+      text-align:center;
+      
+    }
+
+    
+  }
+  
+
+  
+  .third-panel {
+    position: relative;
+    height: 70vh;
+    min-height: 500px;
+    max-height: 600px;
+    width: 100vw;
+    
+    .img-large{
+      height: 60vh;
+      width: 60vw;
+      background-image:url('https://i.ibb.co/RN240kh/USo-A-Homepage-Block-3.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      z-index: 10;
+    }
+
+    .second-line {
+      font-family: 'Raleway', sans-serif;
+      font-size: 5vw;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(-440px);
+      z-index: 20;
+      color: #c6e1ff;
+    }
+  }

@@ -1,0 +1,27 @@
+.sign-in {
+  position: relative;
+  width: 50vw;
+  min-width: 400px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+  .title {
+    margin: 10px 0;
+    
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position: absolute;
+    right: 0;
+    transform: translate(-50%, 0);
+  }
+
+}
