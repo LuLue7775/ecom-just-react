@@ -1,4 +1,3 @@
-# Soda Ecommerce Website
 
 A typical ecommerce application uses redux to manage state and persist users. 
 
