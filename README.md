@@ -2,6 +2,9 @@
 
 A typical ecommerce application uses redux to manage state and persist users. 
 
+![](https://media0.giphy.com/media/9fPqqVyRvqEovw3noc/giphy.webp)
+
+
 ## Overview of tech stack
 
 ### Featuring
